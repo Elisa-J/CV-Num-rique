@@ -10,12 +10,23 @@ body{
 }
 .title{
     text-align: center;
+    margin:50px;
 }
 .header{
     font-weight: bold;
     background-color: #FFE6E6;
-    padding: 15px;
+    padding: 40px;
 }
+.header a{
+    color: #865F5F;
+    text-decoration: none;
+}
+
+nav a.hoverMenu:hover{
+    color:#5C4040;
+    border-bottom: 1px solid #5C4040;
+}
+
 
 .listhead{
     display:flex;
@@ -24,8 +35,13 @@ body{
     list-style-type: none;
 }
 
-/* -----------  section 1  ------------- */
+/* ----------Navbar ------------*/
 
+
+/* -----------  section 1  ------------- */
+.presentation{
+    height: 115vh;
+}
 ul {
 margin: 0;
 padding: 0;
@@ -670,68 +686,42 @@ border-right: 20px solid transparent;
 
 
 
-/* Media Queries */
-@media screen and (max-width: 37.8125em) {
-.align > li {
-width: 100%;
-min-height: 440px;
-height: auto;
-padding: 0;
-margin: 0 0 30px 0;
-}
 
-.book {
-margin: 0 auto;
-}
 
-figcaption {
-text-align: center;
-width: 320px;
-top: 250px;
-padding-left: 0;
-left: -80px;
-font-size: 90%;
-}
-}
-
-.fa-solid{
-    text-align: center;
-
-}
 /* -----------  section 2  ------------- */
 .section2{
     background-color:#FFE6E6 ;
     width: 100%;
     height: 56em;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 
 .insights-animation{
     position:absolute;
     background-color: #865F5F;
-    width: 23em;
+    width: 26em;
     height: 42em;
-    margin-left: 19em;
     border-radius: 20px;
-    margin-top:12vh;
+    margin-top:20vh;
 }
-
-
 
 .bloc-experience{
-    margin-top:113px;
+    margin-top: 3vh;
 }
-
 .experience{
     background-color: #fff;
-    width: 24em; 
+    width: 24em;
     height: 5em;
     border-radius: 18px;
     z-index: 1;
-    margin-left: 380px;
     position: relative;
-    margin-top: 53px;
+    margin: 31px;
+    margin-left: 207px;
+    text-align: center;
+    padding: 10px;
 } 
 
 .experience{
@@ -747,6 +737,14 @@ font-size: 90%;
     height: 8em;
 }
 
+.title-bold{
+    font-weight: bold;
+    color: #462C2C;
+    font-size: 16px;
+}
+.experience,p{
+    font-size: 13px;
+}
 
 
 /* -----------  section 3  ------------- */
@@ -902,7 +900,7 @@ font-size: 90%;
     width: 70%;
 }
 
-/* ----------------------------- */
+/* --------------Champs de competence --------------- */
 
 .skills1{
     margin-top: 4vh;
@@ -979,3 +977,89 @@ font-size: 90%;
 .bar1:nth-child(5) .progress1{
     width: 70%;
 }
+
+
+/* -----------  section 5  ------------- */
+
+.section5{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-bgdPink{
+    display: flex;
+    width: 25em;
+    height: 65vh;
+    background-color: #FFE6E6;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid #865F5F;
+}
+
+
+
+input{
+    height: 4vh;
+    width: 20em;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 0.5px solid #865F5F;
+}
+
+#msg{
+    height: 15vh;
+    width: 20em;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    border-radius: 5px;
+    border: 0.5px solid #865F5F;
+}
+
+.myContact{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 37px;
+}
+
+.myContact > p {
+    margin: 7px;
+}
+
+
+
+
+
+
+
+/* Media Queries */
+@media screen and (max-width: 37.8125em) {
+    .align > li {
+    width: 100%;
+    min-height: 440px;
+    height: auto;
+    padding: 0;
+    margin: 0 0 30px 0;
+    }
+    
+    .book {
+    margin: 0 auto;
+    }
+    
+    figcaption {
+    text-align: center;
+    width: 320px;
+    top: 250px;
+    padding-left: 0;
+    left: -80px;
+    font-size: 90%;
+    }
+    }
+    
+    .fa-solid{
+        text-align: center;
+    }

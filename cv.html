@@ -17,16 +17,23 @@
 <body>
 
     <!-- Mise en page header -->
+    
+    <nav>
     <div class="header">
         <ul class="listhead">
-            <li><a href="#quisuisje"></a>Qui suis-je ?</li>
-            <li><a href="#mesexperiences"></a>Mes experiences</li>
-            <li><a href="#portfolio"></a>Portfolio</li>
-            <li><a href="#contact"></a>Contact</li>
+            <li><a href="#quisuisje" class="hoverMenu">Qui suis-je ?</a></li>
+            <li><a href="#mesexperiences" class="hoverMenu">Mes experiences</a></li>
+            <li><a href="#portfolio" class="hoverMenu">Portfolio</a></li>
+            <li><a href="#skills" class="hoverMenu">Mes compétences</a></li>
+            <li><a href="#contact" class="hoverMenu">Contact</a></li>
         </ul>
     </div>
+    </nav>
+
+    <!------------------- section 1 -------------------->
+    
     <section class="presentation">
-        <h1 class="title">Qui suis-je ?</h1>
+        <h1 class="title" id="quisuisje">Qui suis-je ?</h1>
         
         <!-- book -->
 
@@ -75,12 +82,27 @@
     <!---------------- SECTION 2 ----------------->
 
     <section class="section2">
-        <h2 class="title">Mes experiences</h2>
+        <h2 class="title" id="mesexperiences">Mes experiences</h2>
+        
+    <!--------- Dates--------->
+
+    <!-- <div class="dates">
+        <p>2021/2022</p>
+        <p>2020/2021</p>
+        <p>2019/2020</p>
+        <p>2018/2019</p>
+    </div> -->
+
+
+    <!------- Blocs experiences -------->
         <div class="insights-animation"></div>
-        <div class="cards slide-in"></div>
         <div class="bloc-experience">
             <div class="experience">
-                <p>experience1</p>
+                <p class="title-bold">Centre Medical Sheba Tel Hashomer </br> Ramat Gan, Israël)</p>
+                <p>Attachée de presse et de relations publics, Community Manager</p>
+                <p>- Organisation des Galas</p>
+                <p>- Création du site francophone</p>
+                <p>- Visibilité sur les reseaux sociaux</p>
             </div>
             <div class="experience">
                 <p>experience2</p>
@@ -99,7 +121,7 @@
 
     <!---------------- SECTION 3 ----------------->
     <section class="section3">
-        <h2 class="title">Mes créations</h2>
+        <h2 class="title" id="portfolio">Mes créations</h2>
 
         <div class="container">
             <div class="img1">
@@ -129,7 +151,7 @@
         <!---------------- SECTION 4 ----------------->
 
     <section class="section4">
-        <h2 class="title">Mes compétences</h2>
+        <h2 class="title" id="skills">Mes compétences</h2>
         <div class="skills">
             <div class="name">
                 <span>HTML</span>
@@ -169,12 +191,28 @@
         <!---------------- SECTION 5 ----------------->
 
     <section class="section5">
-        <h2 class="title"> On reste en contact</h2>
-        <p>Elisa Joudal</p> 
-        <p>06.60.46.24.30</p>
-        <p>elisa.joudal@gmail.com</p>
-            
-        
+        <h2 class="title" id="contact"> On reste en contact</h2>
+            <div class="contact-bgdPink">
+                <form>
+                    <label for="name">Nom/Prénom :</label>
+                    <div>
+                        <input id="name" type="text" placeholder="Ex: Marie Dupont"/>
+                    </div>
+                    <label for="email">Email :</label>
+                    <div>
+                        <input id="email" type="email" placeholder="Ex: contact@example.com"/>
+                    </div>
+                        <label for="msg">Message :</label>
+                    <div>
+                        <textarea id="msg" placeholder="Votre message..." name="user_message"></textarea>
+                    </div>
+                </form>
+            </div>
+                <div class="myContact">
+                    <p>Elisa Joudal</p> 
+                    <p>06.60.46.24.30</p>
+                    <p>elisa.joudal@gmail.com</p>
+                </div> 
 
     </section>
 
