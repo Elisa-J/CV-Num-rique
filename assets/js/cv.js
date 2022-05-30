@@ -1,10 +1,10 @@
 function grandir(){
 
-    var elem = document.querySelector('.progress1');
+    
     var largeur = 5;
     var id = setInterval(progression, 50);
     function progression(){
-        if (largeur < 100){
+        if (largeur < 80){
             largeur ++;
             console.log(largeur);
         }
@@ -13,3 +13,7 @@ function grandir(){
         }
     }
 }
+var elem = document.querySelector('.progress1');
+elem.addEventListener('click', function() {
+    grandir();
+})

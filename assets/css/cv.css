@@ -703,26 +703,47 @@ border-right: 20px solid transparent;
     position:absolute;
     background-color: #865F5F;
     width: 26em;
-    height: 42em;
+    height: 39em;
     border-radius: 20px;
     margin-top:20vh;
 }
 
 .bloc-experience{
     margin-top: 3vh;
+    position:relative;
 }
 .experience{
     background-color: #fff;
-    width: 24em;
-    height: 5em;
+    width: 25em;
+    height: 2.7em;
     border-radius: 18px;
     z-index: 1;
-    position: relative;
-    margin: 31px;
-    margin-left: 207px;
+    /* position: relative; */
+    /* margin: 31px;
+    margin-left: 207px; */
     text-align: center;
     padding: 10px;
+    position: absolute;
+    overflow: hidden;
 } 
+.experience1 {
+    top: 3em;
+}
+.experience2 {
+    top: 12em;
+}
+
+.experience3 {
+    top: 21em;
+}
+
+.experience4 {
+    top: 30em;
+}
+
+.experience5 {
+    top: 39em;
+}
 
 .experience{
     -webkit-transition: ease 0.5s all ;  /* Safari and Chrome */
@@ -734,18 +755,24 @@ border-right: 20px solid transparent;
 
 .experience:hover {  
     width: 27em;  
-    height: 8em;
+    height: 9em;
+    margin-top: -2em;
+    margin-left: -1.5em;
 }
 
 .title-bold{
     font-weight: bold;
-    color: #462C2C;
-    font-size: 16px;
+    color: #673F3F;
+    font-size: 19px;
 }
 .experience,p{
     font-size: 13px;
 }
 
+.souligne{
+    text-decoration: underline;
+    margin-bottom: 0.8vh;
+}
 
 /* -----------  section 3  ------------- */
 
