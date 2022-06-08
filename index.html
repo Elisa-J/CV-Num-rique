@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/cv.css">
-    <script src="assets/js/cv.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-    <link href="https://fonts.googleapis.com/css2?family=PT+Mono&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b247226d28.js" crossorigin="anonymous"></script>
+    <script src="assets/js/cv.js" defer></script>
 
     <title>CV numérique Elisa Joudal</title>
 
@@ -18,21 +18,28 @@
 
     <!-- Mise en page header -->
     
+<!-- ----------Navbar desktop ------------ -->
+
     <nav>
-    <div class="header">
-        <ul class="listhead">
-            <li><a href="#quisuisje" class="hoverMenu">Qui suis-je ?</a></li>
-            <li><a href="#mesexperiences" class="hoverMenu">Mes experiences</a></li>
-            <li><a href="#portfolio" class="hoverMenu">Portfolio</a></li>
-            <li><a href="#skills" class="hoverMenu">Mes compétences</a></li>
-            <li><a href="#contact" class="hoverMenu">Contact</a></li>
-        </ul>
-    </div>
+        <div class="header">
+            <ul id="menu" class="listhead">
+                <li><a href="#quisuisje" class="hoverMenu">Qui suis-je ?</a></li>
+                <li><a href="#mesexperiences" class="hoverMenu">Mes experiences</a></li>
+                <li><a href="#portfolio" class="hoverMenu">Portfolio</a></li>
+                <li><a href="#skills" class="hoverMenu">Mes compétences</a></li>
+                <li><a href="#contact" class="hoverMenu">Contact</a></li>
+            </ul> 
+            <div id="burger"><i id="iconBurger" class="fa-solid fa-bars"></i></div>
+        </div>
+<!-- ----------Navbar mobile ------------ -->
+
     </nav>
+
+
 
     <!------------------- section 1 -------------------->
     
-    <section class="presentation">
+    <section class="section presentation">
         <h1 class="title" id="quisuisje">Qui suis-je ?</h1>
         
         <!-- book -->
@@ -83,7 +90,7 @@
     </section>
 
     <!---------------- SECTION 1 bis ----------------->
-    <section class="presentation-bis">
+    <section class="section-bis presentation-bis">
         <h1 class="title" id="quisuisje">Qui suis-je ?</h1>
         <div class="div-parent">
             <div class="image"></div>
@@ -98,7 +105,7 @@
 
     <!---------------- SECTION 2 ----------------->
 
-    <section class="section2">
+    <section class="section section2">
         <h2 class="title" id="mesexperiences">Mes experiences</h2>
         
     <!--------- Dates--------->
@@ -112,7 +119,15 @@
 
 
     <!------- Blocs experiences -------->
-        <div class="insights-animation"></div>
+        <div class="insights-animation">
+            <!-- <div class="div-exp-date"> -->
+                <div class="exp-date">2018 - 2020</div>
+                <div class="exp-date">2018 </div>
+                <div class="exp-date">2014 - 2015</div>
+                <div class="exp-date">2013 - 2014</div>
+                <div class="exp-date">2011 - 2013</div>
+            <!-- </div> -->
+        </div>
         <div class="bloc-experience">
             <div class="experience experience1">
                 <p class="title-bold">Centre Medical Sheba Tel-Hashomer, Ramat Gan, Israël.</p>
@@ -154,7 +169,7 @@
 
     <!---------------- SECTION 2 bis ----------------->
 
-    <section class="section2bis">
+    <section class="section-bis section2bis">
         <h2 class="title" id="mesexperiences">Mes experiences</h2>
         <div class="insights-animation2"></div>
             <div class="bloc-experience-bis">
@@ -195,7 +210,7 @@
     </section>
 
     <!---------------- SECTION 3 ----------------->
-    <section class="section3">
+    <section class="section section3">
         <h2 class="title" id="portfolio">Portfolio</h2>
 
         <div class="container">
@@ -221,11 +236,28 @@
                 <!-- <a href="http://"></a> -->
             </div>
         </div>
+        <div class="scroller">
+            <div class="scroller-item">
+                <img src="assets/img/Capture d’écran 2022-06-07 à 23.27.14.png"/>
+            </div>
+            <div class="scroller-item">
+                <img src="assets/img/chefs-g2175e8e33_1920.jpg"/>
+            </div>
+            <div class="scroller-item">
+                <img src="assets/img/cake-sale-gbcb244902_1920.jpg"/>
+            </div>
+            <div class="scroller-item">
+                <img src="assets/img/7cb32c83-187b-45ed-a910-55ae752088d9.JPG"/>
+            </div>
+            <div class="scroller-item">
+                <img src="assets/img/Capture d’écran 2022-06-07 à 23.27.14.png"/>
+            </div>
+        </div>
     </section>  
 
         <!---------------- SECTION 4 ----------------->
 
-    <section class="section4">
+    <section class="section section4">
         <h2 class="title" id="skills">Mes compétences</h2>
         <div class="div-front">Front...</div>
         <div class="skills">
@@ -267,29 +299,31 @@
 
         <!---------------- SECTION 5 ----------------->
 
-    <section class="section5">
+    <section class="section section5">
         <h2 class="title" id="contact"> On reste en contact</h2>
-            <div class="contact-bgdPink">
-                <form>
-                    <label for="name">Nom/Prénom :</label>
-                    <div>
-                        <input id="name" type="text" placeholder="Ex: Marie Dupont"/>
-                    </div>
-                    <label for="email">Email :</label>
-                    <div>
-                        <input id="email" type="email" placeholder="Ex: contact@example.com"/>
-                    </div>
-                        <label for="msg">Message :</label>
-                    <div>
-                        <textarea id="msg" placeholder="Votre message..." name="user_message"></textarea>
-                    </div>
-                </form>
+            <div class="card">
+                <div class="contact-bgdPink">
+                    <form>
+                        <label for="name">Nom/Prénom :</label>
+                        <div>
+                            <input id="name" type="text" placeholder="Ex: Marie Dupont"/>
+                        </div>
+                        <label for="email">Email :</label>
+                        <div>
+                            <input id="email" type="email" placeholder="Ex: contact@example.com"/>
+                        </div>
+                            <label for="msg">Message :</label>
+                        <div>
+                            <textarea id="msg" placeholder="Votre message..." name="user_message"></textarea>
+                        </div>
+                    </form>
+                </div>
             </div>
-                <div class="myContact">
-                    <p>Elisa Joudal</p> 
-                    <p>06.60.46.24.30</p>
-                    <p>elisa.joudal@gmail.com</p>
-                </div> 
+            <div class="myContact">
+                <p>Elisa Joudal</p> 
+                <p>06.60.46.24.30</p>
+                <p>elisa.joudal@gmail.com</p>
+            </div> 
 
     </section>
 
