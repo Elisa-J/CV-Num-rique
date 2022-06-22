@@ -9,23 +9,25 @@ document.getElementById("burger").addEventListener("click", function () {
 });
 
 
-// function grandir(){
+// var textItem = document.querySelector(".text-div-item");
 
-    
-//     var largeur = 5;
-//     var id = setInterval(progression, 50);
-//     function progression(){
-//         if (largeur < 80){
-//             largeur ++;
-//             console.log(largeur);
-//         }
-//         else {
-//             clearInterval(id);
-//         }
-//     }
-// }
-// var elem = document.querySelector('.progress1');
-// elem.addEventListener('click', function() {
-//     grandir();
-// })
+// textItem.addEventListener("hover",function () {
+//     style.display = "block";
+// });
 
+// if hover -> display txt
+function displayTxt(event) {
+    //evt.currentTarget.style.display = "block";
+   // evt.currentTarget.style.display="block";
+    console.log("we are here")
+}
+// if leave -> hide txt
+function removeTxt(evt) {
+    evt.currentTarget.style.display = "none";
+}
+
+/* mouseover and mouseout events to `.wrapper` element */
+//var textItem2 = document.querySelector('.textDivItem');
+var textItem2 = document.getElementsByClassName("textDivItem");
+textItem2.addEventListener( 'mouseover', displayTxt );
+textItem2.addEventListener( 'mouseout', removeTxt );
